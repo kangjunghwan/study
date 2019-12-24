@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <title>폼 관련 요소</title>
+
+</head>
+<body>
+<h1>
+   가장 좋아하는 아이돌은을 뽑아주세요</h1>
+<form action="https://formspree.io/seulbinim@gmail.com" method="POST">
+  <fieldset>
+    <legend>투표 폼 서식</legend>
+    <label for="name">투표자명</label>
+    <input type="text" id="name" name="name" /><br />
+    <label for="">아이돌 그룹</label>
+    <ul>
+      <li><input type="radio" id="bts" name ="idol" value ="bts"/> <label for="bts">방탄소년단</label></li>
+      <li><input type="radio" id="gdle" name="idol"value="G-DLE"/><label for="gdle">G-DLE</label></li>
+      <li><input type="radio" id="twice"name="idol"value="twice"/><label for="twice">Twice</label></li>
+      <li><input type="radio" id="exp"name="idol" value="exo"/><label for="exp">EXO</label></li>
+    </ul>
+    <label for="memo">남기는 말</label><br />
+    <textarea name="message" id="memo" cols="30" rows="10"></textarea><br />
+    <label for="web">신청과목</label>
+    <select name="web" id ="web"></select>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">javascript</option>
+  </select><br />
+    <button type="submit">전송</button>
+  </fieldset>
+</form>  
+</body>
+</html>
