@@ -1,0 +1,25 @@
+@charset "utf-8";
+::-moz-selection {
+  background: #233d84;
+  color: #ffffff;
+ }
+ 
+ ::selection {
+  background: #233d84;
+  color: #ffffff;
+ }
+
+ /* 숨김 콘텐츠 */
+ .a11y-hidden{
+   position: absolute !important;
+   weight : 1px;
+   height: 1px;
+   overflow: hidden;
+   margin: -1px;
+   clip: rect(0,0,0,0);
+   clip-path: polygon(0 0,0 0,0 0);
+ }
+
+html{
+  font-size : 10px;
+}
